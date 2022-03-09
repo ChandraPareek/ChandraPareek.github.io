@@ -82,3 +82,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
+@media only screen and (max-width:600px) {
+    .change{
+        width: 100%;
+    }
+}
