@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #33255c;
+    background-color: #64b1a7;
 }
 
 #menu{
@@ -15,7 +15,7 @@ body{
 .bar{
     height: 5px;
     width: 100%;
-    background-color: white;
+    background-color: rgb(243, 241, 241);
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -53,7 +53,8 @@ body{
 }
 
 .icon .bar{
-    background-color: white;
+    background-color: rgb(249, 244, 250);
+    z-index: 100;
 }
 
 .icon #bar1{
@@ -67,13 +68,19 @@ body{
 .icon #bar2{
     opacity: 0;
 }
-
+p{
+    display:contents ;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
 .change{
-    background-color: #e93e27;
+    background-color: #f1a043;
     height: 100vh;
-    margin: 0;
+    margin-left: 5px;
     position: absolute;
-    font-size: 30px;
+    font-size: 28px;
     top: 0;
     z-index: -100;
     width: 20%;
@@ -87,5 +94,7 @@ body{
 @media only screen and (max-width:600px) {
     .change{
         width: 100%;
+        font-size: 40px;
     }
 }
+

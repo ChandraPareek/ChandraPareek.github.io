@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knapsack Calculator</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+    <!-- Then include bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="knapsack.css">
+
+</head>
+
+<body>
+    <div class="w3-padding w3-xlarge w3-text-orange">
+        <a href="index.html" class="fa fa-home" style="color:rgb(241, 141, 26) ;"></a>
+        <i class="fa fa-angle-right" style="font-size:25px;color:rgb(241, 141, 26)"></i>
+        <div class="back"><small>Knapsack Calculator</small></div>
+    </div>
+
+    <div class="text-center page-header">
+        <h1>Knapsack Calculator</h1>
+    </div>
+
+    <h2>What is Knapsack Problem ?</h2>
+    <h3><small>Given a set of items, each with a weight and a value Knapsack algorithm
+            determine the number of each item to include in a collection so that the total weight is less than or
+            equal to a given limit and the total value is as large as possible. Knapsack problems appear in real-world
+            decision-making processes in a wide variety of fields, such as finding the least wasteful way to cut raw
+            materials, selection of investments and portfolios,selection of assets for asset-backed
+            securitization,and generating keys for the Merkle–Hellman and other knapsack cryptosystems.<br>
+        </small></h3>
+
+    <br>
+    <br>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </div>
+                    <input class="form-control" id="capacity" type="number" placeholder="Enter Knapsack Capacity">
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                    </div>
+                    <input class="form-control" id="rows" type="number" placeholder="Enter number of Items" />
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="text-center">
+            <button type="button" class="generateTable btn btn-primary" onclick="createTable();">Generate Table</button>
+        </div>
+
+
+        <div class="table" id="wrapper"></div>
+
+        <div class="text-center">
+            <button type="button" class="generateResult btn btn-success" onclick="generateResult();">Calculate</button>
+        </div>
+
+    </div>
+
+
+    <hr>
+
+
+    <div class="container text-center">
+
+        <div class="result">
+
+            <div class="resultContainer col-md-6">
+
+                <h1>Knapsack</h1>
+                <h4>Resultant Profit</h4>
+                <h2 id="kpResultantProfit"></h2>
+                <h4>Profit / Weight</h4>
+                <h2 id="kpProfitWeight"></h2>
+                <h4>Profit</h4>
+                <h2 id="kpProfit"></h2>
+                <h4>Weight</h4>
+                <h2 id="kpWeight"></h2>
+                <h4>Resultant Solution</h4>
+                <h2 id="kpResultantSolution"></h2>
+            </div>
+
+
+            <div class="resultContainer col-md-6">
+
+                <h1>Knapsack 0-1</h1>
+                <h4>Resultant Table</h4>
+                <div id="knapsackTable"></div>
+                <h4>Resultant Profit</h4>
+                <h2 id="kp01ResultantProfit"></h2>
+                <h4>Profit</h4>
+                <h2 id="kp01Profit"></h2>
+                <h4>Weight</h4>
+                <h2 id="kp01Weight"></h2>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="knapsack.js"></script>
+</body>
+
+</html>
