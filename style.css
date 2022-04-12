@@ -1,100 +1,158 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #64b1a7;
+    background-image: url(./796832.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    /* opacity: 0.7; */
 }
 
-#menu{
+.header {
+    display: inline;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
+    border-radius: 80px;
+    float: right;
+    margin-top: 10px;
+}
+
+.hy {
+    border: 1px solid rgb(223, 250, 149);
+    height: 80px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.282);
+    color: rgb(245, 239, 239);
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    top: 50%;
+    position: absolute;
+    animation-name: trn;
+    animation-duration: 1.5s;
+    opacity: 0.7;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+@keyframes trn {
+    0% {
+        width: 0%;
+        overflow: hidden;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+
+#menu {
     width: 35px;
     height: 30px;
-    margin: 30px 0px 20px 20px;
+    margin: 20px 0px 20px 20px;
     cursor: pointer;
-    z-index: 100;
+    float: left;
 }
 
-.bar{
+
+.bar {
     height: 5px;
     width: 100%;
     background-color: rgb(243, 241, 241);
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
-    
+
 }
 
-#bar1{
+#bar1 {
     transform: translateY(-4px);
 }
+
 /* yaha pe bar 2 kyu nhi liya aur 3 line kse aayi */
-#bar3{
+#bar3 {
     transform: translateY(4px);
 }
 
-.nav li a{
+.nav li a {
     color: white;
     text-decoration: none;
 }
 
-.nav li a:hover{
-    border: 1px solid white;
+.nav li a:hover {
+    color: #7d27f5;
 }
 
-.nav li{
+.nav li {
     list-style: none;
     /* to remove the dots */
     padding: 16px 0;
 }
 
-.nav{
+.nav {
     padding: 0;
     margin: 0 20px;
     transition: 1s ease;
     display: none;
 }
 
-.icon .bar{
+.icon .bar {
     background-color: rgb(249, 244, 250);
-    z-index: 100;
 }
 
-.icon #bar1{
+.icon #bar1 {
     transform: translateY(15px) rotate(45deg);
 }
 
-.icon #bar3{
+.icon #bar3 {
     transform: translateY(6px) rotate(-45deg);
 }
 
-.icon #bar2{
+.icon #bar2 {
     opacity: 0;
 }
-p{
-    display:contents ;
+
+p {
+    display: contents;
     padding: 0px;
     margin: 0px;
     align-items: center;
     justify-content: center;
 }
-.change{
+
+.change {
     background-color: #f1a043;
     height: 100vh;
-    margin-left: 5px;
+    margin-left: 0px;
     position: absolute;
     font-size: 28px;
     top: 0;
-    z-index: -100;
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
+    opacity: 1;
+    z-index: -1;
 }
 
 
+
+
 @media only screen and (max-width:600px) {
-    .change{
+    .change {
         width: 100%;
         font-size: 40px;
     }
 }
-

@@ -1,4 +1,53 @@
-.back{
+body {
+    background-image: url("./hufbg.jpg");
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+}
+
+.back {
     font-size: 30px;
-   display: flex;
+    display: flex;
+    color: red;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+
+.block {
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.table {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#tr1 {
+    color: red;
+}
+
+.char {
+    width: 50px;
 }
